@@ -3,7 +3,7 @@ import React from 'react';
 var TodoSearch = React.createClass({
   onChangeEvent: function(){
     var showCompleted = this.refs.showCompleted.checked;
-    var TodoEvent = this.refs.searchText.value;
+    var searchText = this.refs.searchText.value;
 
     this.props.onSearch(showCompleted, searchText);
   },
